@@ -1,0 +1,127 @@
+$txt-white :#fff;
+
+$bg-primary :#3498db;
+$bg-white : #fff;
+$bg-abu : #ecf0f1;
+
+.header{
+    background-color: $bg-primary;
+}
+.header .container{
+    margin-top: 0px;
+    margin-bottom:0px;
+    padding-top:10px;
+}
+.navigasi{
+    margin-top:15px;
+}
+.clear::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.navigasi-left{
+    list-style: none;
+    width: 50%;
+    float: left;
+    li{
+        display: inline-block;
+        margin: 2%;
+        color: $txt-white;
+
+        &:first-child{
+            margin:0;
+        }
+    }
+    select{
+        border: 1px solid $bg-white;
+        background: none;
+        border-radius: 20px;
+        margin-right: 10px;
+        padding-left:5px;
+        height: 30px;
+        color: $bg-white;
+        width: 130px;
+        font-size: 14px;
+        outline: none;
+        option{
+            background: $bg-primary;
+            color: $txt-white;
+            border-radius: 12px;
+        }
+    }
+
+}
+
+.navigasi-right{
+    width: 50%;
+    float: right;
+    text-align: right;
+    li{
+        display : inline-block;
+        margin: 2%;
+        list-style: none;
+        color: $txt-white;
+    }
+    select{
+        border: 1px solid $bg-white;
+        background: none;
+        border-radius: 20px;
+        margin-right: 10px;
+        padding-left:5px;
+        height: 30px;
+        color: $bg-white;
+        width: 80px;
+        font-size: 14px;
+        outline: none;
+        option{
+            background: $bg-primary;
+            color: $txt-white;
+        }
+    }
+}
+
+// SEARCH
+.search-box{
+    background-color: $bg-abu;
+    height: 30px;
+    width: 350px;
+    padding: 4px;
+    border-radius:20px;
+    
+    select{
+        border: 1px solid $bg-primary;
+        background: none;
+        border-radius: 20px;
+        margin-right: 10px;
+        height: 30px;
+        color: $bg-primary;
+        width: 100px;
+        font-size: 14px;
+        outline: none;
+    }
+}
+
+.search-text{
+    border: none;
+    background: none;
+    font-size: 16px;
+    outline: none;
+    padding: 0;
+    line-height: 28px;
+    color: $bg-primary;
+    transition: 0.4s;
+}
+.search-btn{
+    float: right;
+    background: $bg-primary;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: $bg-white
+}
